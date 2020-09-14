@@ -1,0 +1,12 @@
+# declare ConfigMap as a resource
+#resources:
+#- configmap.yaml
+
+# declare ConfigMap from a ConfigMapGenerator
+configMapGenerator:
+- name: a-configmap
+  files:
+    # configfile is used as key
+    - configs/configfile
+
+namespace: kustomize
