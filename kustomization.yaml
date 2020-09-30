@@ -8,7 +8,7 @@ configMapGenerator:
     # configfile is used as key
     - configs/configfile
 
-namespace: kustomize
+namespace: default
 
 
 # declare ConfigMap as a resource
